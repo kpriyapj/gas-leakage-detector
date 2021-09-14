@@ -77,13 +77,13 @@ void SendTextMessage()
 {
   mySerial.println("AT+CMGF=1");    //To send SMS in Text Mode
   delay(1000);
-  mySerial.println("AT+CMGS=\"+919495xxxxxx\"\r"); // change to the phone number you using 
+  mySerial.println("AT+CMGS=\"+91xxxxxxxxx\"\r"); // change to the phone number you using 
   delay(1000);
   mySerial.println("Gas Leaking!");//the content of the message
   delay(200);
   mySerial.println((char)26);//the stopping character
   delay(1000);
-   mySerial.println("AT+CMGS=\"+918113xxxxxx\"\r"); // change to the phone number you using 
+   mySerial.println("AT+CMGS=\"+91xxxxxxxx\"\r"); // change to the phone number you using 
   delay(1000);
   mySerial.println("Gas Leaking!");//the content of the message
   delay(200);
